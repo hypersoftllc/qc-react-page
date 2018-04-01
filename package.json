@@ -1,0 +1,101 @@
+{
+  "name": "@qc/react-page",
+  "version": "0.0.0",
+  "description": "A small library of page related semantic React components.",
+  "keywords": [
+    "aside",
+    "block",
+    "body",
+    "component",
+    "div",
+    "foot",
+    "footer",
+    "head",
+    "header",
+    "layout",
+    "page",
+    "react",
+    "region",
+    "section",
+    "semantic",
+    "sidebar"
+  ],
+  "author": {
+    "name": "Danny Hurlburt",
+    "url": "https://github.com/dhurlburtusa"
+  },
+  "homepage": "https://github.com/hypersoftllc/qc-react-page",
+  "license": "ISC",
+  "browserslist": [
+    "> 0.5%"
+  ],
+  "engines": {
+    "node": ">=7.4.0",
+    "npm": ">=4.0.0"
+  },
+  "files": [
+    "dist/",
+    "es/",
+    "lib/",
+    "src/",
+    "umd"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "bugs": {
+    "url": "https://github.com/hypersoftllc/qc-react-page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hypersoftllc/qc-react-page.git"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src/"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npm run build:css && npm run build:cjs && npm run build:es",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src -d lib/",
+    "build:css": "postcss src/index.css -u postcss-import --no-map -o umd/react-page.css && postcss umd/react-page.css -u cssnano --map -o umd/react-page.min.css && postcss src/Page*.css --no-map -d dist/styles",
+    "build:es": "cross-env BABEL_ENV=es babel src -d es/",
+    "clean": "rimraf coverage/ dist/ es/ lib/ umd/",
+    "coverage": "jest --coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint src/",
+    "prepublishOnly": "npm run clean && npm run lint && npm run build",
+    "test": "jest --watch",
+    "travisci": "npm run coverage"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "coveralls": "^3.0.0",
+    "cross-env": "^5.1.4",
+    "cssnano": "^3.10.0",
+    "eslint": "4.10.0",
+    "eslint-plugin-react": "^7.4.0",
+    "fs-extra": "^3.0.1",
+    "jest": "20.0.4",
+    "postcss-cli": "^5.0.0",
+    "postcss-import": "^11.1.0",
+    "prop-types": "^15.6.0",
+    "react": ">=15.x",
+    "react-test-renderer": ">15.x",
+    "rimraf": "^2.6.2"
+  },
+  "peerDependencies": {
+    "prop-types": ">=15.x",
+    "react": ">=15.x"
+  },
+  "dependencies": {
+    "@qc/react-block": "^0.1.0"
+  }
+}

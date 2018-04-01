@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHead rendered with children should render children 1`] = `
+<header
+  className="Block Page-Head"
+>
+  <span>
+    Child
+  </span>
+</header>
+`;
+
+exports[`PageHead rendered with className should render with expected class attribute 1`] = `
+<header
+  className="Block Page-Head Foo"
+/>
+`;
+
+exports[`PageHead rendered with compClassName should render with expected class attribute 1`] = `
+<header
+  className="Block"
+/>
+`;
+
+exports[`PageHead rendered with compClassName should render with expected class attribute 2`] = `
+<header
+  className="Block  foo"
+/>
+`;
+
+exports[`PageHead rendered with compClassName should render with expected class attribute 3`] = `
+<header
+  className="Block page-head foo"
+/>
+`;
+
+exports[`PageHead rendered with compType should render with expected component 1`] = `
+<div
+  className="Block Page-Head"
+/>
+`;
+
+exports[`PageHead rendered with compType should render with expected component 2`] = `
+<header
+  className="Block Page-Head"
+/>
+`;
+
+exports[`PageHead rendered with compType should render with expected component 3`] = `
+<section
+  className="Block Page-Head"
+/>
+`;
+
+exports[`PageHead rendered with no props should use default props 1`] = `
+<header
+  className="Block Page-Head"
+/>
+`;

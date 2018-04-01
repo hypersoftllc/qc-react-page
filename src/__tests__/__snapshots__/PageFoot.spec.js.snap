@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageFoot rendered with children should render children 1`] = `
+<footer
+  className="Block Page-Foot"
+>
+  <span>
+    Child
+  </span>
+</footer>
+`;
+
+exports[`PageFoot rendered with className should render with expected class attribute 1`] = `
+<footer
+  className="Block Page-Foot Foo"
+/>
+`;
+
+exports[`PageFoot rendered with compClassName should render with expected class attribute 1`] = `
+<footer
+  className="Block"
+/>
+`;
+
+exports[`PageFoot rendered with compClassName should render with expected class attribute 2`] = `
+<footer
+  className="Block  foo"
+/>
+`;
+
+exports[`PageFoot rendered with compClassName should render with expected class attribute 3`] = `
+<footer
+  className="Block page-foot foo"
+/>
+`;
+
+exports[`PageFoot rendered with compType should render with expected component 1`] = `
+<div
+  className="Block Page-Foot"
+/>
+`;
+
+exports[`PageFoot rendered with compType should render with expected component 2`] = `
+<footer
+  className="Block Page-Foot"
+/>
+`;
+
+exports[`PageFoot rendered with compType should render with expected component 3`] = `
+<section
+  className="Block Page-Foot"
+/>
+`;
+
+exports[`PageFoot rendered with no props should use default props 1`] = `
+<footer
+  className="Block Page-Foot"
+/>
+`;
