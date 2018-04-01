@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageSidebar rendered with children should render children 1`] = `
+<aside
+  className="Block Page-Sidebar"
+>
+  <span>
+    Child
+  </span>
+</aside>
+`;
+
+exports[`PageSidebar rendered with className should render with expected class attribute 1`] = `
+<aside
+  className="Block Page-Sidebar Foo"
+/>
+`;
+
+exports[`PageSidebar rendered with compClassName should render with expected class attribute 1`] = `
+<aside
+  className="Block"
+/>
+`;
+
+exports[`PageSidebar rendered with compClassName should render with expected class attribute 2`] = `
+<aside
+  className="Block  foo"
+/>
+`;
+
+exports[`PageSidebar rendered with compClassName should render with expected class attribute 3`] = `
+<aside
+  className="Block page-sidebar foo"
+/>
+`;
+
+exports[`PageSidebar rendered with compType should render with expected component 1`] = `
+<aside
+  className="Block Page-Sidebar"
+/>
+`;
+
+exports[`PageSidebar rendered with compType should render with expected component 2`] = `
+<div
+  className="Block Page-Sidebar"
+/>
+`;
+
+exports[`PageSidebar rendered with compType should render with expected component 3`] = `
+<section
+  className="Block Page-Sidebar"
+/>
+`;
+
+exports[`PageSidebar rendered with no props should use default props 1`] = `
+<aside
+  className="Block Page-Sidebar"
+/>
+`;
