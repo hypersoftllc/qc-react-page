@@ -1,6 +1,6 @@
 {
   "name": "@qc/react-page",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A small library of page related semantic React components.",
   "keywords": [
     "aside",
