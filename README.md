@@ -45,24 +45,24 @@ yarn add @qc/react-page
 
 ## Semantics
 
-Each of the page components has specific meaning and purpose.
+Each of the page components have specific meaning and purpose.
 
 If you are unfamiliar with semantics, checkout the [semantics][whatwg-semantics]
 section at the [WhatWG].
 
 Also, being familiar with how headings and sections generate an outline is
 useful when choosing an appropriate value for the `compType` property of the
-page related components.  See [headings and sections][whatwg-headings-sections
-at [WhatWG].  Pay very close attention to when the word `headings` and the word
+page related components.  See [headings and sections][whatwg-headings-sections]
+at [WhatWG].  Pay very close attention to when the word `heading` and the word
 `header` is used.  They can be very easy to confuse.
 
 
 **`Page`**
 
-Represents a page on a website or a web app.  Usually, only one page is
-displayed at a time.  However, sometimes multiple pages may be loaded to provide
-a better user experience (UX).  For instance, in mobile apps, it is not uncommon
-to navigate back and forth between a search results page and a details page.  In
+Represents a page on a website or a web app.  Usually only one page is displayed
+at a time.  However, sometimes multiple pages may be loaded to provide a better
+user experience (UX).  For instance, in mobile apps, it is not uncommon to
+navigate back and forth between a search results page and a details page.  In
 this scenerio, it would be ideal not to reload the results page everytime the
 user navigates back to it.  This can be easily done by using multiple page
 components.
@@ -73,7 +73,7 @@ By default, pages produce a `div` element.  This may be changed using the
 **`Page.Head`**
 
 Represents the top region of a page.  It is okay to have more than one page
-head.  Usually, they follow one after the other.  Typically, the first page head
+head.  Usually they follow one after the other.  Typically, the first page head
 will contain site-wide content such as brand information and the main
 navigation.  If the page has page-specific content such as breadcrumbs, a table
 of contents, share-this links, etc, then a separate page head will follow the
@@ -107,7 +107,7 @@ the `compType` property which may be set to `'aside'`, `'div'`, or `'section'`.
 **`Page.Foot`**
 
 Represents the bottom region of a page.  It is okay to have more than one page
-foot.  Usually, they follow one after the other.  Typically, the last page foot
+foot.  Usually they follow one after the other.  Typically, the last page foot
 will contain site-wide content such as a list of links, legal information, and
 more.  Sometimes, a page will have a page foot above (that is, comes before) the
 side-wide page foot.  This page foot will usually contain information about its
@@ -137,7 +137,7 @@ import React from 'react'
 
 import Page from '@qc/react-page'
 
-import '@qc/react-page/dist/styles/react-page.css'
+import '@qc/react-page/umd/react-page.css'
 
 export default function AboutPage(props) {
   return (
@@ -166,7 +166,7 @@ import React from 'react'
 
 import Page from '@qc/react-page'
 
-import '@qc/react-page/dist/styles/react-page.css'
+import '@qc/react-page/umd/react-page.css'
 
 export default function HomePage(props) {
   return (
@@ -207,7 +207,7 @@ import React from 'react'
 
 import Page from '@qc/react-page'
 
-import '@qc/react-page/dist/styles/react-page.css'
+import '@qc/react-page/umd/react-page.css'
 
 export default function SomeBlogPage(props) {
   return (
@@ -292,6 +292,7 @@ import React from 'react'
 import { Carousel, Col, Grid, Row } from 'react-bootstrap'
 import Page from '@qc/react-page'
 
+import '@qc/react-page/umd/react-page.css'
 
 class HomePage extends React.Component {
   render() {
