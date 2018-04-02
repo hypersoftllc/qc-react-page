@@ -145,7 +145,7 @@ export default function AboutPage(props) {
       <Page.Head className="is-SiteWide">
         <SiteHeader/>
       </Page.Head>
-      <Page.Body comp="main">
+      <Page.Body compType="main">
         <h1>About Us</h1>
         <p>Lorem ipsum dolor sit amet, consectetur...</p>
       </Page.Body>
@@ -174,22 +174,22 @@ export default function HomePage(props) {
       <Page.Head className="is-SiteWide">
         <SiteHeader/>
       </Page.Head>
-      <Page.Body comp="section">
+      <Page.Body compType="section">
         <ObligatoryCarousel/>
       </Page.Body>
-      <Page.Body comp="section">
+      <Page.Body compType="section">
         <h1>Why Us?</h1>
         <p>Lorem ipsum dolor sit amet, consectetur...</p>
       </Page.Body>
-      <Page.Body comp="section">
+      <Page.Body compType="section">
         <h1>Products</h1>
         <p>Lorem ipsum dolor sit amet, consectetur...</p>
       </Page.Body>
-      <Page.Body comp="section">
+      <Page.Body compType="section">
         <h1>Services</h1>
         <p>Lorem ipsum dolor sit amet, consectetur...</p>
       </Page.Body>
-      <Page.Body comp="section">
+      <Page.Body compType="section">
         <h1>Our Sponsors</h1>
         <SponsorList/>
       </Page.Body>
@@ -219,7 +219,7 @@ export default function SomeBlogPage(props) {
         <BlogNav/>
         <ShareLinks/>
       </Page.Head>
-      <Page.Body comp="article">
+      <Page.Body compType="article">
         <h1>Some Blog Page</h1>
         <p>Lorem ipsum dolor sit amet, consectetur...</p>
         <p>Lorem ipsum dolor sit amet, consectetur...</p>
