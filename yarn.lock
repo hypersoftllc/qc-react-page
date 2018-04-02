@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@qc/react-block@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@qc/react-block/-/react-block-0.1.0.tgz#3f904ff852c0190ffe5480eab92987f05af2dc08"
+"@qc/react-block@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@qc/react-block/-/react-block-0.2.1.tgz#f94c04942b184ab681f02bbe1006608235c04a27"
 
 abab@^1.0.3:
   version "1.0.4"
