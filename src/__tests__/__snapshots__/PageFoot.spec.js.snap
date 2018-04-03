@@ -24,7 +24,7 @@ exports[`PageFoot rendered with compClassName should render with expected class 
 
 exports[`PageFoot rendered with compClassName should render with expected class attribute 2`] = `
 <footer
-  className="Block  foo"
+  className="Block foo"
 />
 `;
 

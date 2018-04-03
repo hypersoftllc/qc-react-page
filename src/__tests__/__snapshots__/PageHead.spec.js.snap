@@ -24,7 +24,7 @@ exports[`PageHead rendered with compClassName should render with expected class 
 
 exports[`PageHead rendered with compClassName should render with expected class attribute 2`] = `
 <header
-  className="Block  foo"
+  className="Block foo"
 />
 `;
 
