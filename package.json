@@ -1,6 +1,6 @@
 {
   "name": "@qc/react-page",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A small library of page related semantic React components.",
   "keywords": [
     "aside",
@@ -66,14 +66,14 @@
     "coverage": "jest --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint src/",
-    "prepublishOnly": "npm run clean && npm run lint && npm run build",
+    "prepublishOnly": "npm run clean && npm run lint && npm run coverage && npm run build",
     "test": "jest --watch",
     "travisci": "npm run coverage"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "7.2.3",
-    "babel-jest": "20.0.3",
+    "babel-jest": "22.4.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
@@ -83,7 +83,7 @@
     "eslint": "4.10.0",
     "eslint-plugin-react": "^7.4.0",
     "fs-extra": "^3.0.1",
-    "jest": "20.0.4",
+    "jest": "22.4.3",
     "postcss-cli": "^5.0.0",
     "postcss-import": "^11.1.0",
     "prop-types": "^15.6.0",

@@ -24,7 +24,7 @@ exports[`PageSidebar rendered with compClassName should render with expected cla
 
 exports[`PageSidebar rendered with compClassName should render with expected class attribute 2`] = `
 <aside
-  className="Block  foo"
+  className="Block foo"
 />
 `;
 

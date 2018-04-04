@@ -24,7 +24,7 @@ exports[`PageBody rendered with compClassName should render with expected class 
 
 exports[`PageBody rendered with compClassName should render with expected class attribute 2`] = `
 <div
-  className="Block  foo"
+  className="Block foo"
 />
 `;
 

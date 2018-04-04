@@ -411,6 +411,13 @@ import PageFoot from '@qc/react-page/src/PageFoot'
 ```
 
 
+## Other Packages from [QC]
+
+* [@qc/react-block][qc-react-block]
+* [@qc/react-conditionals][qc-react-conditionals]
+* [@qc/react-layer][qc-react-layer]
+
+
 ## Maintainers
 
 - [Danny Hurlburt](https://github.com/dhurlburtusa)
@@ -431,6 +438,10 @@ ISC
 [license-url]: LICENSE
 [package-url]: https://npmjs.org/package/@qc/react-page
 [npm-badge-png]: https://nodei.co/npm/@qc/react-page.png?downloads=true&stars=true
+[qc]: https://www.npmjs.com/~qc
+[qc-react-block]: https://www.npmjs.com/package/@qc/react-block
+[qc-react-conditionals]: https://www.npmjs.com/package/@qc/react-conditionals
+[qc-react-layer]: https://www.npmjs.com/package/@qc/react-layer
 [whatwg]: https://whatwg.org/
 [whatwg-headings-sections]: https://html.spec.whatwg.org/multipage/sections.html#headings-and-sections
 [whatwg-outline]: https://html.spec.whatwg.org/multipage/sections.html#outlines
